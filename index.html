@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <head>
   <title>Portfolio</title>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="./web/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
@@ -41,7 +42,7 @@
       padding-left: 10%;
       padding-right: 10%;
     }
-    #achievmentstable, #projectpadding, #references
+    #achievmentstable, #projectpadding,  #references
     {
       padding-left: 10%;
       padding-right: 10%;
@@ -91,7 +92,27 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" style="background-color:aliceblue;">
 
-    <nav class="navbar navbar-expand-sm navbar-dark ftco_navbar ftco-navbar-light site-navbar-target scrolled awake" id="ftco-navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark ftco_navbar ftco-navbar-light site-navbar-target scrolled awake">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#hi" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#Personal" class="nav-link active"><span>PersonalDetails</span></a></li>
+            <li class="nav-item"><a href="#achievements1" class="nav-link"><span>Acheievments</span></a></li>
+          
+          <li class="nav-item"><a href="#twotables" class="nav-link"><span>Technical Skills & Courses</span></a></li>
+            <li class="nav-item"><a href="#projectpadding" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#moredetails" class="nav-link"><span>More Details</span></a></li>
+            <li class="nav-item"><a href="#references" class="nav-link"><span>Reference</span></a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-sm navbar-dark ftco_navbar ftco-navbar-light site-navbar-target scrolled awake" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html"><span>P</span>ortfoilo</a>
         <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,17 +131,17 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div id="hi" style="background-color:burlywood;">
       <div class="form-row">
-        <div class="form-group col-sm-6">
+        <div class="form-group col-md-6">
           <div id="main">
           <center><p style="font-size: xx-large;">I am</p></center>
       <center><b><span id="name">Madhurjya Bora</span></b></center>
       <center><p style="font-size: xx-large;">Managing Director At Vision Magitech</p></center>
         </div>
         </div>
-        <div class="form-group col-sm-6">
+        <div class="form-group col-md-6">
           <center><img src="Vision MD.jpg" alt="Italian Trulli" id="image"></center>
         </div>
       </div>
@@ -136,7 +157,7 @@
     <div style="text-align: center;" id="home">
       <p id="aboutme"><b><u>About Me</u></b></p>
       <hr>
-      <p id="aboutmecontant">I am the Pricipal Scientiest of Vision Magitech comapany at Guwahati,Assam. Holds Btech in ECE from IIITG. I have over 3 years of experience in Robotics, IoT, Embedded System, Speech Processing, Emotion Recognition. I have experience of training more than 2000 engineering students</p>
+      <p id="aboutmecontant">I am the Principle Scientiest of Vision Magitech comapany at Guwahati,Assam. Holds Btech in ECE from IIITG. I have over 3 years of experience in Robotics, IoT, Embedded System, Speech Processing, Emotion Recognition. I have experience of training more than 2000 engineering students</p>
     </div>
     <hr>
     <div class="container">
@@ -154,7 +175,7 @@
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <br>
-        <div class="table-responsive">
+        <div class="table table-striped w-auto">
         <table class="table">
           <thead class="thead-light">
             <tr>
@@ -330,7 +351,7 @@
     
 
       <div class="form-row" id="twotables">
-        <div class="form-group col-sm-6" id="technical">
+        <div class="form-group col-md-6" id="technical">
           
           <p style="text-align: center;" id="aboutme"><b><u>Technical Skills</u></b></p>
           <br>
@@ -379,7 +400,7 @@
           </span>
           </div>
         </div>
-        <div class="form-group col-sm-6"  id="courses">
+        <div class="form-group col-md-6"  id="courses">
           <p style="text-align: center;" id="aboutme"><b><u>Courses</u></b></p>
           <br>
           <span class="border border-primary">
@@ -514,10 +535,10 @@
         <p style="text-align: center;" id="aboutme"><b><u>Contact</u></b></p>
         <hr>
         <div class="form-row">
-          <div class="form-group col-sm-6">
+          <div class="form-group col-md-6">
               <center><p><b><h4 style="color: beige;">Phone No. :-(+91) 7638039360</h4></b></p></center>
           </div>
-          <div class="form-group col-sm-6">
+          <div class="form-group col-md-6">
 <center><p ><b><h4 style="color: beige;">Email ID:- madhurjyabora_99@yahoo.in</h4></b></p></center>
           </div>
         </div>
