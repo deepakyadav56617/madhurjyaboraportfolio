@@ -42,7 +42,7 @@
       padding-left: 10%;
       padding-right: 10%;
     }
-    #achievmentstable, #projectpadding,  #references
+    #achievmentstable, #projectpadding,  #references,#fourtab
     {
       padding-left: 10%;
       padding-right: 10%;
@@ -70,7 +70,7 @@
 
     #contact
     {
-      background-color: aqua;
+      background-color:sandybrown;
     }
 
     #image
@@ -83,12 +83,41 @@
     {
       padding-top: 40px;
     }
+    .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
   </style>
   <script>
     $( function() {
     $( "#accordion" ).accordion();
   } );
   </script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+    </script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0" style="background-color:aliceblue;">
 <!-- 
@@ -116,13 +145,19 @@
       <div class="container-fluid">  
       <a class="navbar-brand" href="index.html">Portfolio</a>
         <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+       
+
+         <span class="oi oi-menu"></span><div onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
             <li class="nav-item"><a href="#hi" class="nav-link"><span>Home</span></a></li>
             <!-- <li class="nav-item"><a href="#Personal" class="nav-link active"><span>PersonalDetails</span></a></li> -->
-            <li class="nav-item"><a href="#achievements1" class="nav-link"><span>Acheievments</span></a></li>
+            <li class="nav-item"><a href="#achievements1" class="nav-link"><span>Achievements</span></a></li>
             <li class="nav-item"><a href="#twotables" class="nav-link"><span>Technical Skills & Courses</span></a></li>
             <li class="nav-item"><a href="#projectpadding" class="nav-link"><span>Projects</span></a></li>
             <li class="nav-item"><a href="#moredetails" class="nav-link"><span>More Details</span></a></li>
@@ -136,9 +171,9 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <div id="main">
-          <center><p style="font-size: xx-large;">I am</p></center>
+          <!-- <center><p style="font-size: xx-large;">I am</p></center> -->
       <center><b><span id="name">Madhurjya Bora</span></b></center>
-      <center><p style="font-size: xx-large;">Managing Director At Vision Magitech</p></center>
+      <center><p style="font-size: xx-large;"><span style="color:green;">Managing Director</span> Vision Magitech</p></center>
         </div>
         </div>
         <div class="form-group col-md-6">
@@ -157,9 +192,12 @@
     <div style="text-align: center;" id="home">
       <p id="aboutme"><b><u>About Me</u></b></p>
       <hr>
-      <p id="aboutmecontant">I am the Principal Scientiest of Vision Magitech comapany at Guwahati,Assam. Holds Btech in ECE from IIITG. I have over 3 years of experience in Robotics, IoT, Embedded System, Speech Processing, Emotion Recognition. I have experience of training more than 2000 engineering students</p>
+      <p id="aboutmecontant">I am the Principal Scientist of Vision Magitech.
+        Guwahati,Assam. 
+        Holds Btech in ECE from IIITG. I have over 3 years of experience in Robotics, IoT, Embedded System, Speech Processing, Emotion Recognition. I have an experience of training more than 2000 engineering students</p>
     </div>
     <hr>
+    <div id="fourtab">
     <div class="container">
     <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
       <li class="nav-item">
@@ -175,6 +213,7 @@
         <a class="nav-link" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="false">Personal Details</a>
       </li>
     </ul>
+    </div>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <br>
@@ -273,7 +312,7 @@
               </tr>
               <tr>
                 <td><li><b>Permanent Address:-</b></li></td>
-                <td>Maligaon East Gotanagar NF-RLY QTR NO-119/B, Shuttle Gate, Pin-781011</td>
+                <td>Maligaon Boripara Bus Stop, Radhika Enclave 3rd floor, Pin:-781012</td>
               </tr>
               <tr>
                 <td><li><b>Date of Birth:-</b></li></td>
@@ -316,9 +355,8 @@
         </ul>
       </div>
     </div>
-    </div>
-    
-    </div>
+  </div>
+
     <div id="achievements1">
       <p style="text-align: center;" id="aboutme"><b><u>Acheievments</u></b></p>
       <hr>
@@ -374,7 +412,7 @@
                 </tr>
                 <tr>
                   <td><b>Programming Languages:-</b></td>
-                  <td>: C, C++, Deep Learning Using Python</td>
+                  <td>: C, C++</td>
                 </tr>
                 <tr>
                   <td><b>Scripting Languages:-</b></td>
@@ -403,6 +441,10 @@
                 <tr>
                   <td><b>Website designing basics:-</b></td>
                   <td>HTML,PHP, Basics Of Android App Development and Interfacing with Microcontrollers.</td>
+                </tr>
+                <tr>
+                  <td><b>Other Important Skills:-</b></td>
+                  <td>Machine Learning, Deep Learning and Artificial Neural Networks</td>
                 </tr>
               </tbody>
             </table>
